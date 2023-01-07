@@ -1,8 +1,8 @@
 import {Dimensions, PixelRatio} from 'react-native';
 const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = Dimensions.get('window');
 // 360 and 800 is width and height of screen dimension used in design
-const widthBaseScale = SCREEN_WIDTH / 360;
-const heightBaseScale = SCREEN_HEIGHT / 800;
+const widthBaseScale = SCREEN_WIDTH / 390;
+const heightBaseScale = SCREEN_HEIGHT / 844;
 
 function normalize(size: number, based = 'width') {
   const newSize =
