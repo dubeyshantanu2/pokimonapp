@@ -2,6 +2,7 @@ import {Text, SafeAreaView, FlatList} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import Styles from './style';
 import PokemonCard from '../../components/PokemonCard';
+import AddButton from '../../components/AddButton';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../../navigation/AppNavigation';
 type DetailScreenNavigationProp = NativeStackNavigationProp<
@@ -49,6 +50,7 @@ const HomeScreen = ({navigation}: Props) => {
   return (
     <SafeAreaView style={Styles.container}>
       <Text style={Styles.headerText}>Pokedex</Text>
+      <AddButton label="Add" onPress={navigateToDetail} />
       {loading ? (
         <Text style={Styles.headerText}>Loading...</Text>
       ) : (
